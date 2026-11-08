@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" data-type="product" data-radius="soft" data-buttons="solid" data-motion>
+<head>
+<meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TRND Station: international snacks for retailers</title>
+<meta name="description" content="Wholesale chips, sweets and drinks by the case for retail stores. $200 minimum order, free US shipping over $500.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TRND Station: international snacks for retailers">
+<meta property="og:description" content="Wholesale chips, sweets and drinks by the case. $200 minimum order, free US shipping over $500.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#fffdf5">
+<link rel="canonical" href="https://trndstation.com/preview/">
+<meta name="site-kind" content="other">
+<meta name="page-type" content="product">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<style>
+:root {
+  --p-bg: #fffdf5; --p-surface: #f6f1e1; --p-ink: #141414; --p-muted: #5b564a;
+  --p-accent: #ffc400; --p-accent-ink: #111111; --p-action: #141414; --p-action-ink: #fffdf5;
+  --p-inv-bg: #141414; --p-inv-surface: #212121; --p-inv-ink: #fffdf5; --p-inv-muted: #9c9b96;
+  --p-inv-accent: #ffc400; --p-inv-accent-ink: #111111; --p-inv-action: #ffc400; --p-inv-action-ink: #111111;
+  --font-display: "Hanken Grotesk", system-ui, sans-serif;
+  --font-text: "Hanken Grotesk", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.03em;
+  --display-tracking-xl: -0.038em;
+}
+</style>
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js"><link rel="modulepreload" href="assets/moments/lib.js"><link rel="modulepreload" href="assets/moments/word-highlight/moment.js">
+<style>
+  /* product tiles: the pack on the surface ground, whole (page CSS inside a visual) */
+  .packs { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-5); }
+  .packs .tile { min-width: 0; grid-template-rows: minmax(0, 1fr) auto; height: 100%; }
+  .packs .tile__media { --tile-ratio: auto; height: 100%; min-height: 0; }
+  .tile__media > img { object-fit: contain; padding: var(--s-5); }
+  .tile__title { font: 500 var(--t-card)/1.3 var(--font-text); letter-spacing: -0.01em; margin: 0; }
+  .hero--product .hero__stage.packs { background: none; overflow: visible; border-radius: 0; margin-top: var(--s-6); min-height: 0; }
+  #lineup .tile.pack { min-width: 0; }
+  #lineup .tile.pack .tile__media { --tile-ratio: 2 / 3; width: 100%; min-width: 0; overflow: hidden; }
+  .tile__media > img { max-width: 100%; width: 100%; }
+  #lineup .tile.pack .tile__media > img { padding: var(--s-3); }
+  .mark-logo { display: block; height: 40px; width: auto; }
+  @media (max-width: 1023px) {
+    .packs { gap: var(--s-4); }
+    #lineup .tile.pack, #lineup .tile.pack:first-of-type { grid-column: auto / span 4; }
+  }
+  @media (max-width: 639px) {
+    footer .footer__col { grid-column: 1 / -1; }
+    footer .footer__col a { overflow-wrap: anywhere; }
+    .hero--product .hero__stage.packs { height: 240px; aspect-ratio: auto; gap: var(--s-3); }
+    .tile__media > img { padding: var(--s-2); }
+    .packs .tile__title { font-size: var(--t-small); line-height: 1.25; }
+  }
+</style>
+</head>
+<body>
+<!-- type: product. deal: hero product (head row, then the pack tiles), nav nav-split-free, close close-type, footer footer-columns, rhythm brand-band, buttons solid, mark: client's own logo svg.
+     moments: word-highlight in #about (the statement), plus the hero's one entrance. -->
+<header class="nav">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="nav__logo" href="#top" aria-label="TRND Station home"><img class="mark-logo" src="assets/trnd-logo.svg" alt="TRND Station" width="160" height="40"></a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item"><a class="nav__link" href="#about">About</a></div>
+      <div class="nav__item"><a class="nav__link" href="#questions">Questions</a></div>
+      <div class="nav__item"><a class="nav__link" href="#lineup">Lineup</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__link" href="tel:+16305383934">Call us</a>
+      <a class="btn btn--primary" href="mailto:contact@trndstation.com?subject=TRND%20Station%20Wholesale%20Inquiry">Email our team</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero hero--product" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text hero__in">
+      <div class="hero__head">
+        <div>
+          <h1 id="hero-h">International snacks for retailers</h1>
+          <p class="hero__lead">TRND Station sells international chips, sweets and drinks by the case to retail stores. Minimum order $200, free US shipping over $500.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="mailto:contact@trndstation.com?subject=TRND%20Station%20Wholesale%20Inquiry">Email our team</a>
+          <a class="btn btn--secondary" href="#lineup">See the lineup</a>
+        </div>
+      </div>
+      <div class="hero__stage packs">
+        <article class="tile">
+          <div class="tile__media"><img src="https://cdn.faire.com/fastly/d75c6787ae9ed87a5fc34e88d9cca5d1314962e9b4592adb7bc502baf3e048e5.jpeg" alt="Lay’s Magic Masala chips, front of the pack" width="800" height="800" fetchpriority="high"></div>
+          <div class="tile__head"><p class="tile__title">Lay’s Magic Masala</p></div>
+        </article>
+        <article class="tile">
+          <div class="tile__media"><img src="https://cdn.faire.com/fastly/7a15bcf64b348ae233ef3992881c829e0122288d67be68c051ba115c6c7df969.jpeg" alt="Royal Family Chocolate Mochi, front of the pack" width="800" height="800" fetchpriority="high"></div>
+          <div class="tile__head"><p class="tile__title">Royal Family Chocolate Mochi</p></div>
+        </article>
+        <article class="tile">
+          <div class="tile__media"><img src="https://cdn.faire.com/fastly/997398fca9384bf77f214b6236d62e17d4375876b19f13378ece07b21900e5f9.jpeg" alt="Frooti Mango Drink, front of the carton" width="800" height="800" fetchpriority="high"></div>
+          <div class="tile__head"><p class="tile__title">Frooti Mango Drink</p></div>
+        </article>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="section statement ground-brand" id="about" data-moment="word-highlight" aria-label="About TRND Station">
+    <div class="wrap">
+      <p class="t-label">About TRND Station</p>
+      <p class="mo-wh__text">We supply retailers with international packaged snacks, sweets, drinks, squishy toys and select novelty items by the case. Our focus is simple: interesting products, a clear way to connect, and room to keep finding what comes next.</p>
+    </div>
+  </section>
+
+  <section class="section" id="questions" aria-labelledby="questions-h" style="--hm: 2">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="questions-h">Questions retailers ask</h2>
+      </div>
+      <div class="grid">
+        <div class="faq span-6">
+          <div class="faq__item"><h3>Who we sell to</h3><p>We supply retailers and businesses buying products for resale. Contact us to discuss your store and product needs.</p></div>
+          <div class="faq__item"><h3>Minimum order</h3><p>Our minimum order is $200.</p></div>
+          <div class="faq__item"><h3>Free shipping</h3><p>Yes. Free shipping is available within the US on orders over $500. For other orders, or for delivery times, contact us for shipping details.</p></div>
+          <div class="faq__item"><h3>Products we carry</h3><p>International packaged chips, savory snacks, sweets, drinks, squishy toys and select novelty products. Toys are separate from our food assortment.</p></div>
+        </div>
+        <div class="faq span-6">
+          <div class="faq__item"><h3>Ordering on this site</h3><p>This site is a showcase, not a checkout. Email contact@trndstation.com or call 630-538-3934 to check availability and place a wholesale order.</p></div>
+          <div class="faq__item"><h3>Product availability</h3><p>Our selection changes. Contact us to confirm current products, pack sizes and availability before ordering.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="lineup" aria-labelledby="lineup-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="lineup-h">The lineup. <span class="muted">Chips, sweets and drinks by the case.</span></h2>
+      </div>
+      <div class="grid">
+        <ul class="rows span-3">
+          <li><span class="rows__name">International chips</span><p>Bold flavors and savory snacks from beyond the usual snack aisle.</p></li>
+          <li><span class="rows__name">Sweets and treats</span><p>Chocolate, mochi and packaged treats worth discovering.</p></li>
+          <li><span class="rows__name">Drinks</span><p>International beverages to round out your selection.</p></li>
+          <li><span class="rows__name">Toys and trending finds</span><p>Squishy toys and select novelty products. Ask for current availability.</p></li>
+        </ul>
+        <article class="tile pack span-3 start-4">
+          <div class="tile__media"><img src="https://cdn.faire.com/fastly/98278176fffdd44333d3b373cc3fd07465bb02f878063284e15842154fe7e265.jpeg" alt="Kurkure Masala Munch snack, front of the pack" width="800" height="800" loading="lazy"></div>
+          <div class="tile__head"><p class="tile__title">Kurkure Masala Munch</p></div>
+        </article>
+        <article class="tile pack span-3">
+          <div class="tile__media"><img src="https://cdn.faire.com/fastly/b76a3da2fbe14d86010b1c345c5f1cd84b46c5d987ae99a3476be8cf9dbe03a5.webp" alt="Tiger Chips Kebab, front of the pack" width="800" height="800" loading="lazy"></div>
+          <div class="tile__head"><p class="tile__title">Tiger Chips Kebab</p></div>
+        </article>
+        <article class="tile pack span-3">
+          <div class="tile__media"><img src="https://cdn.faire.com/fastly/3fd57221c6b1a74e5aab8f669ea954264850e7ff460a8c671ea8d909a7d4a569.jpeg" alt="Cadbury Clinkers chocolate, front of the pack" width="800" height="800" loading="lazy"></div>
+          <div class="tile__head"><p class="tile__title">Cadbury Clinkers</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer closing" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <div class="section-head">
+        <h2 id="close-h">Wholesale inquiries</h2>
+        <p>Include your business name, shipping ZIP code and the products you are interested in.</p>
+      </div>
+      <a class="btn btn--primary btn--xl btn--wide" href="mailto:contact@trndstation.com?subject=TRND%20Station%20Wholesale%20Inquiry">Email our team<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-6 stack-4">
+          <a class="nav__logo" href="#top" aria-label="TRND Station home"><img class="mark-logo" src="assets/trnd-logo.svg" alt="TRND Station" width="160" height="40"></a>
+          <p class="footer__lede">International snacks, sweets, drinks and toys for retailers.</p>
+        </div>
+        <div class="span-3 start-7 footer__col"><h3>Site</h3><ul><li><a href="#about">About</a></li><li><a href="#questions">Questions</a></li><li><a href="#lineup">Lineup</a></li></ul></div>
+        <div class="span-3 footer__col"><h3>Contact</h3><ul><li><a href="mailto:contact@trndstation.com">contact@trndstation.com</a></li><li><a href="tel:+16305383934">630-538-3934</a></li><li><a href="https://www.instagram.com/trnd.station/" rel="noopener noreferrer">@trnd.station</a></li></ul></div>
+      </div>
+      <div class="footer__legal">
+        <span>&copy; 2026 TRND Station</span>
+        <span>Product names and logos are trademarks of their owners.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+</body>
+</html>
