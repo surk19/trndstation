@@ -140,3 +140,27 @@ footer{background:#050505;color:var(--mute);padding:56px 0 44px}
  .js .reel{height:auto}.js .reel-stage{position:static;height:auto;display:block;padding:24px 0}.js .slide{position:static;opacity:1;visibility:visible;transform:none;padding:40px 22px}.js .progress,.count{display:none}
  *{transition-duration:.01ms!important}
 }
+
+/* glass */
+:root{--glass:rgba(255,255,255,.07);--glass-line:rgba(255,255,255,.16);--glass-hi:inset 0 1px 0 rgba(255,255,255,.22);--blur:blur(22px) saturate(1.5)}
+body{position:relative;isolation:isolate}
+body::before{content:"";position:fixed;inset:-20vmax;z-index:-1;pointer-events:none;
+ background:radial-gradient(38vmax 38vmax at 18% 22%,rgba(255,196,0,.5),transparent 70%),radial-gradient(34vmax 34vmax at 82% 38%,rgba(255,120,0,.34),transparent 70%),radial-gradient(40vmax 40vmax at 40% 88%,rgba(255,196,0,.34),transparent 70%);
+ animation:drift 36s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate3d(4vmax,-3vmax,0) scale(1.08)}}
+.hero,.title{background:none}
+.reel,.chapter{background:none}
+footer{background:rgba(5,5,5,.72);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border-top:1px solid var(--glass-line)}
+.top.solid,nav{background:rgba(14,14,14,.55);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);box-shadow:0 1px 0 var(--glass-line)}
+.card,.contact-box,.faq details,.cats li{background:var(--glass);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border:1px solid var(--glass-line);box-shadow:var(--glass-hi),0 24px 40px -28px rgba(0,0,0,.8)}
+.cats{border-top:0;display:grid;gap:12px}.cats li{border-radius:22px;padding:30px 28px}
+.faq{display:grid;gap:12px}.faq details{border-radius:20px;padding:0 24px}details:first-child{border-top:1px solid var(--glass-line)}
+.contact-box{border-radius:26px}
+.shot{background:rgba(255,196,0,.16);border-bottom:1px solid var(--glass-line)}
+.slide-art{background:rgba(255,196,0,.2);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border:1px solid rgba(255,214,90,.45);box-shadow:var(--glass-hi),0 30px 60px -30px #000}
+.btn-ghost{background:var(--glass);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border-color:var(--glass-line);box-shadow:var(--glass-hi)}
+.finale .btn-ghost-dark{backdrop-filter:none}
+.scrollcue::after{background:var(--glass-line)}
+@media (hover:hover) and (pointer:fine){.cats li:hover{background:rgba(255,196,0,.9);color:#111;padding-left:28px}.card:hover{border-color:rgba(255,214,90,.7)}}
+@supports not (backdrop-filter:blur(1px)){.card,.contact-box,.faq details,.cats li,nav,.top.solid{background:rgba(24,24,24,.94)}}
+@media (prefers-reduced-motion:reduce){body::before{animation:none}}
