@@ -1,1 +1,0 @@
-/* Legacy catalog retired. Current TRND Station pages use trnd.js. */
